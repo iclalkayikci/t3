@@ -12,9 +12,9 @@ gorseller = [gray, hist_eq] + [
 basliklar = [
     "Orijinal",
     "Histogram\nEşitleme (Global)",
-    "CLAHE\nclip=1.0  (az)",
-    "CLAHE\nclip=2.0  (orta)",
-    "CLAHE\nclip=4.0  (güçlü)",
+    "CLAHE\nclip=0.1 (az)",
+    "CLAHE\nclip=4.0  (orta)",
+    "CLAHE\nclip=8.0  (güçlü)",
 ]
 renkler = ["#4fc3f7", "#ff8a65", "#a5d6a7", "#66bb6a", "#2e7d32"]
 

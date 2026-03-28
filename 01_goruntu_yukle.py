@@ -2,7 +2,7 @@ import cv2
 import matplotlib.pyplot as plt
 
 # ── Görüntüyü oku ─────────────────────────────────────────────────────────────
-img  = cv2.imread("ornek.jpg")
+img  = cv2.imread("araba.jpg")
 rgb  = cv2.cvtColor(img, cv2.COLOR_BGR2RGB)
 gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
 h, w = img.shape[:2]
@@ -26,7 +26,7 @@ ax1.text(0.5, -0.04,
 # Orta: Gri ton
 ax2 = fig.add_subplot(1, 3, 2)
 ax2.imshow(gray, cmap="gray")
-ax2.set_title("Gri Ton (Grayscale)", fontsize=15, fontweight="bold", color="#a5d6a7", pad=10)
+ax2.set_title("Siyah Beyaz (Grayscale)", fontsize=15, fontweight="bold", color="#a5d6a7", pad=10)
 ax2.axis("off")
 ax2.text(0.5, -0.04,
          f"Min: {gray.min()}   Max: {gray.max()}   Ortalama: {gray.mean():.1f}",
